@@ -13,7 +13,7 @@ Various interactions with Large Language Models (LLMs) beyond simple chatbots.
     ```shell
     uv venv .venv
     source .venv/bin/activate
-    uv add tiktoken langchain langchain-openai langchain-ollama python-dotenv
+    uv add tiktoken langchain langchain-openai langchain-ollama python-dotenv datasets tqdm matplotlib scikit-learn
     ```
 
 3.  **Set your OpenAI API key:**
@@ -25,16 +25,14 @@ Various interactions with Large Language Models (LLMs) beyond simple chatbots.
 
 The `sma.ipynb` notebook covers the following examples:
 
-*   **Tokenization:** Understanding how text is tokenized using `tiktoken`.
-*   **LLM Interaction:**
+*   **Tokenization (`sma.ipynb`):** Understanding how text is tokenized using `tiktoken`.
+*   **LLM Interaction (`sma.ipynb`):**
     *   Querying the OpenAI API (`gpt-4o`).
     *   Running local models with Ollama (`gemma3:1b`).
-*   **Advanced Use Cases:**
+*   **Advanced Use Cases (`sma.ipynb`):**
     *   Image generation based on a text prompt.
     *   Image analysis and description.
-    *   Structured data extraction (JSON) from unstructured text for useful analysis.
-
-## Sentiment Analysis
-```shell
-uv add datasets tqdm  matplotlib scikit-learn
-```
+    *   Structured data extraction (JSON) from unstructured text for strategic analysis.
+*   **Prompt Engineering for Sentiment Analysis (`sentiment.ipynb`):**
+    *   Comparing zero-shot, few-shot, and chain-of-thought prompting techniques.
+    *   Evaluating the performance of different prompts for sentiment classification on a movie review dataset.
