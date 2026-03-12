@@ -33,3 +33,8 @@ The `sma.ipynb` notebook covers the following examples:
     *   Image generation based on a text prompt.
     *   Image analysis and description.
     *   Structured data extraction (JSON) from unstructured text for useful analysis.
+
+## Sentiment Analysis
+```shell
+uv add datasets tqdm  matplotlib scikit-learn
+```
